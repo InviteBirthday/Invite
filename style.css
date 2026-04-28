@@ -371,7 +371,7 @@ button {
     max-width: 370px;
     margin: auto auto 0 auto; /* Теперь margin-top: auto вытолкнет блок вниз */
     
-    background: url('imgs/таймер.svg') no-repeat top center;
+    background: url('imgs/таймер.svg');
     background-size: 100% 100%;
     padding-top: 90px;
     box-sizing: border-box;
