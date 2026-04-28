@@ -377,6 +377,7 @@ button {
     box-sizing: border-box;
     text-align: center;
     color: #fff;
+    min-height: 280px;
 }
 
 .timer-title {
