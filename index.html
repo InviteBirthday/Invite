@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ruslan+Display&display=swap" rel="stylesheet">
+
+    <title>Приглашение</title>
+</head>
+<body>
+    <img class="portret reveal" src="imgs/Портрет.svg" alt="картинка" width="100%">
+
+    <div class="welcome reveal">
+        <h1><span class="textSpan">С</span>каз о девице Александре</h1>
+        <h2><span class="numberSpan">30</span> весен от роду</h2>
+    </div>
+
+    <img class="calendar reveal" src="imgs/календарь.svg" alt="календарик" width="94%">
+
+    <div class="place">
+        <h1><span class="textSpan">М</span>есто действа</h1>
+            <div class="mapPlace">
+                <p>«Купеческий терем»</p>
+                <p>село Малышево, 55</p>
+            </div>
+        <a href="https://yandex.ru/maps/-/CPSevJ9L" target="_blank">Карта</a>
+    </div>
+
+
+<!-- Пример для пары иконок -->
+<img src="imgs/cock.svg" class="floating-icon cock" alt="fceruil">
+<img src="imgs/matreoshka.svg" class="floating-icon matr" alt="fceruil">
+<img src="imgs/horse-4-svgrepo-com 2.svg" class="floating-icon horse" alt="fceruil">
+<img src="imgs/balalaika-svgrepo-com 2.svg" class="floating-icon balala" alt="fceruil">
+
+    <div class="plan">
+    <h1><span class="textSpan">К</span>ак всё пройдет</h1>
+    
+    <div class="timeline-container reveal">
+        <div class="center-line reveal"></div>
+
+        <div class="info-row row-left reveal reveal-delay-1">
+            <div class="time">16:00</div>
+            <div class="icon"><img src="imgs/повозка влево.svg" alt=""></div>
+            <div class="text"><span class="miniSpanText">К</span>омсомольская, 103. Лошади запряжены, доставим в целости</div>
+        </div>
+
+        <div class="info-row row-right reveal reveal-delay-2">
+            <div class="text"><span class="miniSpanText">П</span>ожаловали в село Малышево, в терем купеческий!</div>
+            <div class="icon"><img src="imgs/повозка вправо.svg" alt=""></div>
+            <div class="time">16:30</div>
+        </div>
+
+        <div class="info-row row-left reveal reveal-delay-3">
+            <div class="time">17:00</div>
+            <div class="icon"><img src="imgs/тарелка.svg" alt=""></div>
+            <div class="text"><span class="miniSpanText">Г</span>уляем по-купечески! Угощайтесь на славу, пейте-ешьте в удовольствие!</div>
+        </div>
+
+        <div class="info-row row-right reveal reveal-delay-4">
+            <div class="text"><span class="miniSpanText">П</span>огостили на славу! Пора и честь знать — кучер домчит до Комсомольской, 103</div>
+            <div class="icon"><img src="imgs/месяц.svg" alt=""></div>
+            <div class="time">22:30</div>
+        </div>
+    </div>
+    </div>
+
+<section class="clothes-section reveal">
+    <div class="clothes-container">
+        
+        <h2 class="main-title">Одеяния</h2>
+        <p class="intro-text">
+            Ждем гостей в нарядах ладных да исконных, с узорами русскими да в цветах праздничных, чтобы весь пир наш в купеческом тереме красотою старинной сиял
+        </p>
+
+        <h3 class="sub-title">Красны девицы</h3>
+        <p class="description">
+            Девицам красным, да боярыням надобно сиять красотою в сарафанах длинных да платьях цветочных, плечи шалями узорчатыми прикрыв, а косы лентами да бусами алыми украсив
+        </p>
+
+        <div class="palette">
+            <img src="imgs/Frame 1.svg" alt="Цветовая палитра">
+        </div>
+
+        <h3 class="sub-title">Добры молодцы</h3>
+        <p class="description">
+            Мужам статным подобает выглядеть солидно — в рубахах-косоворотках с узором по вороту да в жилетах темных, поясом крепким подпоясанных
+        </p>
+
+    </div>
+</section>
+    
+    <div class="formDescription reveal">
+        <p><span class="miniSpanText">П</span>росим дать ответ уважительный — быть ли вам на нашем пиру, дабы место почетное за столом для вас приготовили</p>
+    </div>
+
+    <form id="partyForm" class="reveal">
+        <input type="text" id="name" placeholder="Ваши ФИО" required>
+        
+        <label><input type="radio" name="choice" value="Приду">Я с удовольствием приду</label>
+        <label><input type="radio" name="choice" value="Не приду">К сожалению. не смогу присутствовать</label>
+        
+        <button type="submit">Отправить</button>
+    </form>
+
+    <div class="message reveal">
+        <p><span class="miniSpanText">Я</span> ценю вашу заботу и внимание и не важно в какой конверт вы упакуете подарок, а еще дорогой гость, прошу взять с собой на праздник 100 рублей наличными</p>
+    </div>
+
+    <section class="timer-section reveal">
+    <div class="timer-container">
+        <h2 class="timer-title">До заветного часа и пира великого осталось...</h2>
+        
+        <div id="countdown" class="countdown">
+            <div class="timer-item">
+                <span id="days" class="number">00</span>
+                <span class="label">дней</span>
+            </div>
+            <div class="timer-item">
+                <span id="hours" class="number">00</span>
+                <span class="label">часов</span>
+            </div>
+            <div class="timer-item">
+                <span id="minutes" class="number">00</span>
+                <span class="label">минут</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
